@@ -7,14 +7,7 @@ const curryUUID = require(".");
 
 describe("UUID generation", () => {
 	it("generates valid UUIDs", () => {
-		const generateUUID = curryUUID()
-			("addGroup", 8)
-			("addGroup", 4)
-			("addGroup", 4)
-			("addGroup", 4)
-			("addGroup", 12)
-			("setSeparator", "-")
-			("prepare");
+		const generateUUID = curryUUID()("addGroup", 8)("addGroup", 4)("addGroup", 4)("addGroup", 4)("addGroup", 12)("setSeparator", "-")("prepare");
 
 		for (let index = 0; index < 100; index++) {
 			const uuid = generateUUID();
@@ -26,5 +19,5 @@ describe("UUID generation", () => {
 		assert.throws(() => {
 			curryUUID()("invalidAction");
 		}, Error);
-	})
+	});
 });
