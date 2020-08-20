@@ -1,3 +1,5 @@
+/* eslint-env mocha */
+
 const { assert } = require("chai");
 const isUUID = require("is-uuid");
 
