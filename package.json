@@ -1,0 +1,23 @@
+{
+	"name": "curry-uuid",
+	"version": "1.0.0",
+	"description": "A UUID generation system that uses currying.",
+	"main": "./src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/haykam821/Curry-UUID.git"
+	},
+	"keywords": [
+		"uuid",
+		"curry"
+	],
+	"author": "haykam821",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/haykam821/Curry-UUID/issues"
+	},
+	"homepage": "https://github.com/haykam821/Curry-UUID#readme"
+}
